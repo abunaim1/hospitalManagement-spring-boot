@@ -2,7 +2,9 @@ package com.hospitalManagement.hospitalManagement.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
+import org.springframework.context.annotation.DependsOn;
 
+import javax.print.Doc;
 import java.time.LocalDateTime;
 
 @Entity
@@ -26,4 +28,7 @@ public class Appointment {
     @JoinColumn(name = "patient_id", nullable = false) // Patient is required and not nullable
     private Patient patient;
 
+    @ManyToOne
+    @JoinColumn(nullable = false)
+    private Doctor doctor;
 }

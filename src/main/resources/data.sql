@@ -5,3 +5,4 @@ VALUES
     ('Jisan', 'MALE', '1988-03-15', 'dishant.verma@example.com', 'A_POSITIVE'),
     ('Tanni', 'FEMALE', '1992-12-01', 'neha.iyer@example.com', 'AB_POSITIVE'),
     ('Kabir', 'MALE', '1993-07-11', 'kabir.singh@example.com', 'O_POSITIVE');
+ON CONFLICT DO NOTHING;
